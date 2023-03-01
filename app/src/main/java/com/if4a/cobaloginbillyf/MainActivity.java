@@ -12,12 +12,12 @@ public class MainActivity extends AppCompatActivity {
     private TextView tvSesi;
     private Button btnLogout;
     KendaliLogin KL = new KendaliLogin();
-    public static String keySPusername = "spPadang";
+    public static String keySPusername = "sppadangabcdefghijklmnopqrstuvwxyz";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if(KL.isLogin(MainActivity.this,keySPusername) == true ) {
+        if(KL.isLogin(MainActivity.this,keySPusername) == true) {
             setContentView(R.layout.activity_main);
             tvSesi = findViewById(R.id.tv_sesi);
             btnLogout = findViewById(R.id.btn_logout);
